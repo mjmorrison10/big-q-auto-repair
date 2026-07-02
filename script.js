@@ -350,7 +350,7 @@
       if (issue) body += 'Issue: ' + issue + '\n';
 
       // Try mailto first
-      var mailtoLink = 'mailto:info@bigqautorepair.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      var mailtoLink = 'mailto:[EMAIL ADDRESS]?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       
       // Show success and redirect
       if (successEl) {
@@ -363,8 +363,8 @@
 
       // Fallback: after 2 seconds, suggest calling
       setTimeout(function() {
-        if (confirm('If your email didn\'t open, please call us directly at (562) 343-5681 to schedule your appointment.')) {
-          window.location.href = 'tel:5623435681';
+        if (confirm('If your email didn\'t open, please call us directly at (555) 123-4567 to schedule your appointment.')) {
+          window.location.href = 'tel:5551234567';
         }
       }, 2000);
     });
